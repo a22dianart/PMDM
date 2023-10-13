@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ourense"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_gravity="center_horizontal|top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ourense" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:text="Ourense"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/santiago"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_gravity="center_horizontal|center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/catedral" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center"
+        android:text="Santiago"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal|bottom"/>
+</FrameLayout>

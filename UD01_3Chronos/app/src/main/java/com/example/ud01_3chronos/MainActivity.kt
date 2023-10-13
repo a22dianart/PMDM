@@ -7,7 +7,8 @@ import android.widget.Button
 import android.widget.Chronometer
 import java.nio.file.Files
 
-class MainActivity : AppCompatActivity() {
+class
+MainActivity : AppCompatActivity() {
     lateinit var chrono: Chronometer
     var running = false
     var offset = 0L
