@@ -4,6 +4,6 @@
     <string name="start">Inicio</string>
     <string name="next">Siguiente</string>
     <string name="encrypt_text">Aqui está tu mensaje encriptado!</string>
-    <string name="mensage_text">POr favor, introduce tu mensaje</string>
+    <string name="mensage_text">Por favor, introduce tu mensaje</string>
 
 </resources>
