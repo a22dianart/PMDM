@@ -6,23 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:name="com.example.ud03_1_secretapp.WelcomeFragment"
-        android:padding="16dp"
+<androidx.fragment.app.FragmentContainerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_weight="1"
+    android:id="@+id/fragment_container_view_1"
+    android:name="com.example.ud03_1_secretapp.WelcomeFragment"
+    />
 
-        >
-    </androidx.fragment.app.FragmentContainerView>
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container_id2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:name="com.example.ud03_1_secretapp.WelcomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:padding="16dp"
-
-        >
-    </androidx.fragment.app.FragmentContainerView>
+        android:layout_weight="1"
+        android:id="@+id/fragment_container_view_2"
+        android:name="com.example.ud03_1_secretapp.MessageFragment"
+        />
 
 </LinearLayout>

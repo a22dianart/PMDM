@@ -8,20 +8,20 @@
     android:orientation="vertical"
     android:gravity="center_horizontal" >
 
-    <TextView
-        android:id="@+id/welcome_text"
+    <EditText
+        android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:textSize="20sp"
         android:layout_margin="20dp"
-        android:text="@string/welcome_text" />
+        android:hint="@string/message_text"
+        android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button_start"
+        android:id="@+id/button_next"
         android:layout_width="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_height="wrap_content"
-        android:text="@string/start" />
+        android:text="@string/next" />
 
 </LinearLayout>
