@@ -9,20 +9,12 @@
     android:orientation="vertical"
     android:gravity="center_horizontal" >
 
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_margin="20dp"
-        android:hint="@string/message_text"
-        android:inputType="textMultiLine" />
-
-    <Button
-        android:id="@+id/button_next"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_height="wrap_content"
-        android:text="@string/next" />
+    <TextView
+        android:id="@+id/encrypt_textValue"
+        android:layout_width="224dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textAlignment="center"/>
 
 </LinearLayout>
