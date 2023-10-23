@@ -16,13 +16,15 @@ class EncryptFragment : Fragment() {
     ): View? {
         val message =EncryptFragmentArgs.fromBundle(requireArguments()).message
         val view= inflater.inflate(R.layout.fragment_encrypt, container, false)
-        view.findViewById<TextView>(R.id.encrypt_textValue).text=message
+        view.findViewById<TextView>(R.id.encrypt_textValue).text=cifrado(message)
         return view
     }
     fun cifrado(message: String)= message.map{//metodo para que devolva o caracter +3 (solo letras maiusculas ou minusculas, senon o mesmo) Devolve en maiusuclas
-        var num = it.uppercase().hashCode()
-
-
-    }
+        if(it.isLetter()){
+            it.uppercaseChar().code.minus('A'.code).plus(3).mod(26).plus('A'.code).toChar()
+        }else{
+            it
+        }
+    }.joinToString("")
 
 }
