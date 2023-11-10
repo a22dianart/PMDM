@@ -16,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:id="@+id/collapsing_toolbar"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        >
 
             <ImageView
 
@@ -101,7 +102,7 @@
         android:id="@+id/fab"
         android:layout_margin="16dp"
         android:contentDescription="descripcion"
-        android:src="@android:drawable/btn_star_big_on"
+        android:src="@android:drawable/ic_media_play"
         android:layout_gravity="bottom|end"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
