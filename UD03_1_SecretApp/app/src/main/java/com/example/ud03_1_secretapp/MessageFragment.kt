@@ -8,23 +8,27 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.navigation.findNavController
+import com.example.ud03_1_secretapp.databinding.FragmentMessageBinding
+import com.example.ud03_1_secretapp.databinding.FragmentWelcomeBinding
 
 
 class MessageFragment : Fragment() {
+    private var _binding: FragmentMessageBinding ? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view= inflater.inflate(R.layout.fragment_message, container, false)
-        val buttonNext = view.findViewById<Button>(R.id.button_next)
-        buttonNext.setOnClickListener {
-            val message = view.findViewById<EditText>(R.id.edit_text).text.toString()
+        _binding = FragmentMessageBinding.inflate(inflater, container, false)
+        val view = binding.root
+        //val buttonNext = view.findViewById<Button>(R.id.button_nect)
+        binding.buttonNext.setOnClickListener {
+            val message = binding.editText.text.toString()
             val actions = MessageFragmentDirections.actionMessageFragmentToEncryptFragment(message)
             view.findNavController().navigate(actions)
         }
         return view
     }
-
 }
